@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Simulator</title>
+</head>
+<body>
+    <main id="main">
+        <div id="beforeLog">
+            <h1>List of users:</h1>
+            <div class="data-list-wrap">
+                <div id="data-list">
+
+                </div>
+            </div>
+        </div>
+        <div id="form-wrap">
+            <form id="logForm" action="button" novalidate autocomplete="off">
+                <div>
+                    <label for="login">Login</label>
+                </div>
+                <div>
+                    <input type="text" id="loginTile" name="login">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                </div>
+                <div>
+                    <input type="password" id="passwordTile" name="password">
+                </div>
+                <div>
+                    <button id="btn" type="button" onclick="getData()">Login</button>
+                </div>
+                <div>
+                    <button type="button" id="goback">go back</button>
+                </div>
+            </form>
+        </div>
+        <div id="loggedIn">
+            <div>
+                <h1>Welcome back <span id="logName"></span>!</h1>
+                <h1>Your balance: <span id="logBalance"></span> PLN.</h1>
+            </div>
+        </div>
+        <div id="reminder">
+            <p>Invalid login or password!</p>
+        </div>
+        </main>
+        <div class="navbar" id="navbar">
+            <img src="images/hamburger.png" alt="" class="hamburger" id="hamburger">
+            <span class="navitems" id="navitems">
+                <div class="profile" id="profile">
+                    <a href="" class="imglink"><img src="" alt="" class="profileImg" id="profileImg"></a>
+                    <div>
+                        <a href="" class="logName2"><span id="logName2"></span></a>
+                    </div>
+                </div>
+                <a href="" class="navEl">Home</a>
+                <a href="" class="navEl">About</a>
+                <a href="" class="navEl">Support</a>
+                <button class="navEl" id="toLogInOut">Login</button>
+            </span>
+        </div>
+        <div class="loader-wrapper" id="loader-wrapper">
+            <h1 id="loadingh1">Loading</h1>
+            <span class="loader"><span class="loader2"></span></span>
+          </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    background-image: url("images/background.jpg");
+}
+a{
+    text-decoration: none;
+}
+main{
+    transition: 300ms;
+}
+/*Loading screen*/
+@keyframes anim{
+    from{
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0;
+    }
+}
+.loader-wrapper {
+    animation: anim 1.5s;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    background: linear-gradient(90deg, rgba(255,124,37,1) 0%, rgb(0, 0, 0) 100%);
+    box-shadow: 1px 1px 1px black;
+    animation: loader 0.5s infinite;
+    border-radius: 50%;
+}
+.loader2{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+@keyframes loader{
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(90deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(270deg);}
+    100% { transform: rotate(360deg);}
+}
+/*navbar*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 100vh;
+    background-color: rgb(253, 253, 253);
+    transition: 200ms;
+    box-shadow: 1px 3px 17px black;
+}
+.hamburger {
+    width: 35px;
+    padding: 10px;
+    transition: 500ms;
+    border-radius: 15px;
+}
+.hamburger:hover{
+    background-color: rgb(236, 236, 236);
+}
+.navitems{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    display: none;
+}
+.profile{
+    display: none;
+    flex-direction: row;
+    align-items: end;
+}
+.profile:hover{
+    background-color: rgb(236, 236, 236);
+}
+.profileImg{
+    width: 65px;
+    padding: 5px;
+    padding-inline: 20px;
+}
+.imglink:focus{
+    outline: none;
+}
+#logName2{
+    transition: 300ms;
+    font-size: 20px;
+    color: rgb(25, 52, 204);
+}
+#logName2:hover, .logName2:focus{
+    outline: none;
+    color: rgb(255, 124, 37);
+}
+.navEl{
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    padding-inline: 20px;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+#toLogInOut{
+    background: transparent;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    border-top: 1px solid rgb(207, 207, 207);
+}
+.navEl:hover,#toLogInOut:hover,.navEl:focus, #toLogInOut:focus{
+    outline: none;
+    color: rgb(255, 124, 37);
+    border-right: 7px solid rgb(255, 124, 37);
+    background-color: rgb(236, 236, 236);
+}
+/*beforeLog*/
+#beforeLog h1{
+    text-align: center;
+}
+.data-list-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#data-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#data-list div{
+    font-size: 20px;
+}
+#data-list div h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*login form*/
+#form-wrap{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#logForm{
+    height: 700px;
+    width: 700px;
+    border-radius: 15%;
+    box-shadow: 1px 3px 17px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+#logForm div{
+    display: flex;
+    justify-content: center;
+}
+#logForm input{
+    transition: 300ms;
+    border: 1px solid rgb(207, 207, 207);
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+#logForm input:focus{
+    outline: none ;
+    border:1px solid rgb(255, 124, 37);
+    background-color: rgb(236, 236, 236);
+}
+#logForm label{
+    width: 80%;
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(255, 124, 37);
+    font-weight: bold;
+}
+#btn{
+    transition: 300ms;
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    background-color: white;
+    border: 1px solid rgb(255, 124, 37);
+}
+#btn:hover{
+    color: rgb(255, 124, 37);
+    border: 1px solid rgb(207, 207, 207);
+}
+#btn:focus{
+    outline: none;
+    color: rgb(255, 124, 37);
+    border: 1px solid rgb(207, 207, 207);
+}
+#goback{
+    transition: 300ms;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color: rgb(37, 150, 255);
+}
+#goback:hover{
+    color: rgb(255, 124, 37);
+}
+#goback:focus{
+    outline: none;
+    color: rgb(255, 124, 37);
+}
+#reminder{
+    width: 100%;
+    transition: 300ms;
+    display: none;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: red;
+    transition: 300ms;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*logged in*/
+#loggedIn{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logName{
+    color: rgb(25, 52, 204);
+}
+#logBalance{
+    color: green;
+}
+
+@media (max-width: 1024px)
+{
+    .navbar{
+        width: 100vw;
+        height: 55px;
+    }
+    #beforeLog{
+        margin-top: 76px;
+    }
+    #form-wrap{
+        width: 100vw;
+        height: 100vh;
+        align-items: initial;
+    }
+    #logForm{
+        margin-top: 75px;
+        height: 650px;
+        width: 650px;
+    }
+    #logForm input{
+        height: 48px;
+        font-size: 22px;
+    }
+    #logForm label{
+        font-size: 26px;
+    }
+    #btn{
+        width: 100px;
+        height: 40px;
+        font-size: 22px;
+    }
+    #reminder{
+        margin-top: 75px;
+        font-size: 18px;
+    }
+    #loggedIn{
+        margin-top: 75px;
+    }
+}
+@media (max-width: 768px)
+{
+    .navbar{
+        width: 100vw;
+        height: 55px;
+    }
+    #form-wrap{
+        width: 100vw;
+        height: 100vh;
+    }
+    #logForm{
+        margin-top: 0px;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0%;
+    }
+    #logForm input{
+        height: 48px;
+        font-size: 22px;
+    }
+    #logForm label{
+        font-size: 26px;
+    }
+    #btn{
+        width: 100px;
+        height: 40px;
+        font-size: 22px;
+    }
+    #reminder{
+        margin-top: 75px;
+        font-size: 18px;
+    }
+    #loggedIn div h1{
+        font-size: 22px
+    }
+    @media (max-height: 500px)
+    {
+        .profileImg{
+            width: 45px;
+        }
+        #logName2{
+            font-size: 17px;
+        }
+        .navEl{
+            font-size: 22px;
+            padding: 5px;
+        }
+        #form-wrap{
+            width: 100vw;
+            height: 100vh;
+        }
+        #logForm{
+            height: 100vh;
+            justify-content: center;
+        }
+        #logForm input{
+            margin-top: 5px;
+            height: 28px;
+            font-size: 18px;
+        }
+        #logForm label{
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        #btn{
+            margin-top: 5px;
+            width: 80px;
+            height: 30px;
+            font-size: 18px;
+        }
+        #reminder{
+            margin-top: 45px;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+[
+{
+    "login": "user1",
+    "password": "siema",
+    "name": "user1",
+    "imgUrl": "/images/icon1.png",
+    "balance": 123123
+},
+{
+    "login": "user2",
+    "password": "nara",
+    "name": "user2",
+    "imgUrl": "/images/icon2.png",
+    "balance": 21123
+},
+{
+    "login": "user3",
+    "password": "ema",
+    "name": "user3",
+    "imgUrl": "/images/icon3.png",
+    "balance": 86586
+},
+{
+    "login": "admin",
+    "password": "admin",
+    "name": "admin",
+    "imgUrl": "/images/icon4.png",
+    "balance": 1234567890
+}
+]
