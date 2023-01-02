@@ -42,7 +42,7 @@ main{
     position: relative;
     background: linear-gradient(90deg, rgba(255,124,37,1) 0%, rgb(0, 0, 0) 100%);
     box-shadow: 1px 1px 1px black;
-    animation: loader 0.5s infinite;
+    animation: loader 1s;
     border-radius: 50%;
 }
 .loader2{

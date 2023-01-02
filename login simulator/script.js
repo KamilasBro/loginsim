@@ -1,17 +1,13 @@
 //refresh
 const loadingScreen=document.getElementById("loader-wrapper");
 const loadh1=document.getElementById("loadingh1");
-$(window).on("load",function(){
-    loadingScreenFunc();
-  });
+$(window).on("load",()=>{
+    $(".loader-wrapper").fadeOut(1200);
+});
   function loadingScreenFunc()
   {
     loadingScreen.style.display="flex";
-    setTimeout(loadingScreenFunc2,1400);
-    function loadingScreenFunc2()
-    {
-        loadingScreen.style.display="none";
-    }
+    $(".loader-wrapper").fadeOut(1200);
   }
 //API
 const loginTile=document.getElementById("loginTile");
